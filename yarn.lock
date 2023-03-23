@@ -1782,6 +1782,11 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.5.tgz#5f19d2b85a98e9558036f6a3cacc8819420f05cf"
   integrity sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==
 
+"@types/react-native-torch@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@types/react-native-torch/-/react-native-torch-1.1.0.tgz#3b24fe995b602eb7260b7e8721b59f87b61d69c2"
+  integrity sha512-GnMoDCbdnuDcbp7YLjV5SwF0X7W9sPNA1RDXegb9pb5+KeTb9EIeFKcyNa8LVXwI7eDMnetN1MrpLaFN33pYbw==
+
 "@types/react-test-renderer@^18.0.0":
   version "18.0.0"
   resolved "https://registry.yarnpkg.com/@types/react-test-renderer/-/react-test-renderer-18.0.0.tgz#7b7f69ca98821ea5501b21ba24ea7b6139da2243"
