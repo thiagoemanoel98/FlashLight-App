@@ -1,8 +1,10 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {View, StyleSheet, Image, TouchableOpacity} from 'react-native';
+import Torch from 'react-native-torch';
+import RNShake from 'react-native-shake';
+
 import lightOn from './assets/icons/eco-light.png';
 import lightOff from './assets/icons/eco-light-off.png';
-
 import logoDioWhite from './assets/icons/logo-dio-white.png';
 import logoDio from './assets/icons/logo-dio.png';
 
@@ -12,6 +14,10 @@ const App = () => {
   const handleChangeToggle = () => {
     setToggle(!toggle);
   };
+
+  useEffect(() => {
+    Torch.switchState(toggle);
+  }, [toggle]);
 
   return (
     <View style={toggle ? styles.containerLight : styles.container}>
