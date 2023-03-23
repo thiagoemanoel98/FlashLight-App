@@ -19,6 +19,16 @@ const App = () => {
     Torch.switchState(toggle);
   }, [toggle]);
 
+  useEffect(() => {
+    const subscription = RNShake.addListener(() => {
+      setToggle(oldValue => !oldValue);
+    });
+
+    return () => {
+      subscription.remove();
+    };
+  }, []);
+
   return (
     <View style={toggle ? styles.containerLight : styles.container}>
       <TouchableOpacity onPress={handleChangeToggle}>
